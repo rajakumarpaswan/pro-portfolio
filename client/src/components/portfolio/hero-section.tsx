@@ -1,15 +1,19 @@
 import { Button } from "@/components/ui/button";
 import { Github, Linkedin, Mail } from "lucide-react";
 import profileImage from "@/assets/profile-image.jpeg";
+import { ButtonGroup } from "@mantine/core";
+// import { Button } from '@mantine/core';
 
 export default function HeroSection() {
-  const handleDownloadResume = () => {
-    // Create a link to download the resume
-    const link = document.createElement('a');
-    link.href = '/attached_assets/Raja kumar paswan_1751519263496.pdf';
-    link.download = 'Raja_Kumar_Paswan_Resume.pdf';
-    link.click();
-  };
+const handleDownloadResume = () => {
+  const link = document.createElement('a');
+  link.href = encodeURI('/attached_assets/Raja kumar paswan_1751519263496.pdf');
+  link.download = 'Raja_Kumar_Paswan_Resume.pdf';
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+};
+
 
   const scrollToProjects = () => {
     const element = document.getElementById("projects");
@@ -33,12 +37,13 @@ export default function HeroSection() {
               Aspiring AI/ML Engineer with a strong foundation in machine learning, frontend development, and data handling. Looking to contribute to impactful AI-driven projects.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <Button onClick={scrollToProjects} size="lg">
+              <Button  onClick={scrollToProjects} size="lg">
                 View My Work
               </Button>
-              <Button variant="outline" size="lg" onClick={handleDownloadResume}>
-                Download Resume
+              <Button variant="outline" size="lg" onClick={handleDownloadResume} >
+                    Download Resume
               </Button>
+
             </div>
             <div className="flex justify-center lg:justify-start space-x-6 mt-8">
               <a

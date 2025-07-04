@@ -57,8 +57,8 @@ export default function ContactSection() {
             I'm always open to discussing new opportunities and interesting projects. Let's connect!
           </p>
         </div>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-          <div className="space-y-8">
+        <div className="grid grid-cols-1   lg:grid-cols-2 gap-12">
+          <div className="space-y-8 flex flex-col justify-center   ">
             <div className="flex items-center space-x-4">
               <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
                 <Mail className="h-5 w-5 text-primary" />
