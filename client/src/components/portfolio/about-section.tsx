@@ -21,7 +21,7 @@ export default function AboutSection() {
           <div className="animate-slideInRight">
             <h3 className="text-2xl font-bold mb-6">Frontend Developer & AI/ML Enthusiast</h3>
             <p className="text-muted-foreground mb-6">
-              Currently pursuing B.Tech in Computer Science and Engineering with specialization in Artificial Intelligence and Machine Learning from Hindustan Institute of Technology and Science, Chennai.
+              Completed B.Tech in Computer Science and Engineering with a specialization in Artificial Intelligence and Machine Learning from Hindustan Institute of Technology and Science, Chennai, two months ago.
             </p>
             <div className="space-y-4">
               <div className="flex items-start space-x-3">
